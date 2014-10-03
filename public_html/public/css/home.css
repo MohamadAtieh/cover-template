@@ -1,0 +1,25 @@
+body {
+    background-color: honeydew;
+    text-align: center;
+}
+.cover-container{margin-left: auto;margin-right: auto; margin-top: 100px}
+.cover-container h1,small{color: #000; font-family:monospace;}
+.cover-container small{font-size: medium; font-style:normal}
+.social-container{margin-top:25px; 
+                  position: absolute;
+                  top: 200px;
+                  right: 0;
+                  bottom: 0;
+                  left: 0;
+                  margin: auto;}
+.social-container img{margin:5px;}
+.page-header{border-bottom: 2px solid darkslategray}
+.profile-links{position: absolute;
+               top: 290px;
+               right: 0;
+               bottom: 0;
+               left: 0;
+               margin: auto; }
+.profile-links a{padding-right: 25px}
+
+footer{margin-top: 200px;}

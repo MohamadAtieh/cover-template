@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Fill me</title>
+        <!-- fill in meta for google,twitter, and facebook-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- optional
+        <meta http-equiv="refresh" content="30">
+		-->
+        <!-- for Facebook -->          
+        <meta property="og:title" content="" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="" />
+
+        <!-- for Twitter -->          
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:description" content="" />
+        <meta name="twitter:image" content="" />
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="public/css/home.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script type="text/javascript" src="public/js/libs/jquery/jquery.js"></script>
+        <script type="text/javascript" src="public/js/libs/jqueryui/jquery-ui.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <div class="cover-container">
+            <div class="page-header">
+                <h1><strong>Your Name</strong></h1>
+                <small>Job Title</small>
+            </div>
+            <div class="social-container">
+                <a href="" title="Email Me"><img id="mail" src="public/img/message-outline-32.png"/></a>
+                <a href="" title="Github"><img id="github" src="public/img/github-9-32.png"/></a>
+                <a href="" title="LinkedIn"><img id="linkedin" src="public/img/linkedin-3-32.png"/></a>
+                <a href="" title="My Blog"><img id="blog" src="public/img/pages-3-32.png"/></a>
+                <a href="" title="Twitter"><img id="twitter" src="public/img/twitter-32.png"/></a>
+                <a href="" title="Facebook"><img id="fb" src="public/img/facebook-32.png"/></a>
+                <a href="" title="Play Store"><img id="android" src="public/img/android-6-32.png"/></a>
+            </div>
+            <div class="profile-links">
+                <a><small><strong><u>Portfolio</u></strong></small></a>
+                <a><small><strong><u>About Me</u></strong></small></a>
+                <a href=""><small><strong><u>Resume</u></strong></small></a>
+            </div>
+        </div>
+        <footer>
+            <p>© Mohamad Atie  2014</p>
+        </footer>
+
+        <script>
+            var old_path;
+            $('img').hover(
+                    function (e) {
+                        var id = this.id;
+                        old_path = $('#' + id).attr('src');
+                        var new_path;
+                        switch (id) {
+                            case 'mail':
+                                new_path = 'public/img/message-outline-48.png';
+                                break;
+                            case 'github':
+                                new_path = "public/img/github-9-48.png";
+                                break;
+                            case 'linkedin':
+                                new_path = "public/img/linkedin-3-48.png";
+                                break;
+                            case 'blog':
+                                new_path = "public/img/pages-3-48.png";
+                                break;
+                            case 'twitter':
+                                new_path = "public/img/twitter-48.png";
+                                break;
+                            case 'fb':
+                                new_path = "public/img/facebook-48.png";
+                                break;
+                            case 'android':
+                                new_path = "public/img/android-2-48.png";
+                                break;
+                        }
+                        $('#' + id).attr('src', new_path);
+                    },
+                    function () {
+                        $('#' + this.id).attr('src', old_path);
+                    });
+        </script>
+    </body>
+</html>
